@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    line-height: normal;
+    overflow-x:hidden;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    backface-visibility: hidden;
+    background-color: #012A4A;
+    position: relative;
+}
+
+.board{ 
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid black; 
+    display:flex; 
+    flex-wrap:wrap; 
+    position: relative;
+    top: 150px;
+    height:300px; 
+    width:330px; 
+    background:rgb(97, 97, 235) 
+} 
+
+.score1 {
+    background: #d8544a;
+    border: 2px #d8544a solid;
+    border-radius: 10px;
+    transition: background 1s;
+    position: relative;
+    width: 100px;
+    bottom: 275px;
+    right: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .score2 {
+    background: #ecb538;
+    border: 2px #ecb538 solid;
+    border-radius: 10px;
+    transition: background 1s;
+    position: relative;
+    width: 100px;
+
+    bottom: 380px;
+    left: 55px;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+
+.board div { 
+    height:40px; 
+    width:40px; 
+    margin:3px;
+    border-radius:20px 
+}
+
+.square{ 
+    background:white; 
+} 
+
+.player-one { 
+    background:red;
+}
+.player-two { 
+    background:yellow; 
+}
+.playAgain{
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 450px;
+    left: 20px;
+    background: #5f5c5c;
+    transition: background 2s;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playAgain:hover a{
+    background: aliceblue;
+    color: #ecb538;
+}
+.restart{ 
+    position: fixed; 
+    top: 75px; 
+    left: 600px; 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+/* Css Animation */
+
+/*.board:hover{
+    display: block;
+    color: #ff010b;
+    opacity: 1;
+    transition: opacity 0.2s, top 0s;
+
+}
+*/
+
